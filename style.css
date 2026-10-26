@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee8dc;
+    font-family: 'Montserrat', sans-serif;
+    color: #33352c;
+
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+
+.page {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    background-color: #f7f4ed;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.cover {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.profile {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f7f4ed;
+    border: 8px solid #f7f4ed;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.intro {
+    text-align: center;
+    padding: 90px 20px 20px;
+}
+
+.intro h1 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+.description {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    color: #596044;
+}
+
+.links {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 58px;
+    margin: 18px 0;
+    border: 1.5px solid #596044;
+    background-color: transparent;
+    color: #33352c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.link-button:hover {
+    background-color: #596044;
+    color: #f7f4ed;
+    transform: translateY(-3px);
+}
+
+
+
+footer {
+    background-color: #596044;
+    color: #f7f4ed;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 500px) {
+
+    .cover {
+        height: 250px;
+    }
+
+    .profile {
+        width: 135px;
+        height: 135px;
+
+        top: 185px;
+
+        border-width: 7px;
+    }
+
+    .intro {
+        padding-top: 80px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .links {
+        width: 82%;
+    }
+
+    .link-button {
+        height: 55px;
+    }
+}
